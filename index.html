@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About Me</title>
+	</head>
+	<body>
+		<header>
+			<style></style>
+		</header>
+		<main>
+			<h1>Class1Lab</h1>
+			<p>Was I born in Colombia or the cayman Islands?</p>
+			<P>Which sport do you think is my favorite, soccer or basketball?</P>
+			<P>Do you think pizza is my favorite food?</P>
+		</main>
+		<footer>
+			(c) 2022 Danner Taylor
+		</footer>
+		<script>
+			// I declared a variable called answer1 = name
+			// Assigned it a string = data type
+			// With the value 'Was I born in Colombia or the cayman Islands?'. = value
+			let answer1 = prompt('Was I born in Colombia or the cayman Islands?');
+			console.log(answer1);
+
+			// String concatenation
+			alert('You answered ' + answer1 + ' as my place of birth');
+
+			let answer2 = prompt('Which sport do you think is my favorite, soccer or basketball?');
+			console.log(answer2);
+
+			alert('You think ' + answer2 + ' is my favorite sport');
+
+			if (answer2 === 'soccer') {
+				alert('That is correct');
+			};
+
+			let answer3 = prompt('Which do you think is my favorite food? Pizza or Pasta?');
+			console.log(answer3);
+
+			alert('Tha is interesting that you selected ' + answer3 + ' as my favorite food, because pasta is my favorite food!');
+
+			let answer4 = prompt('My birth month starts with the letter "J" what month is it?');
+			console.log(answer4);
+
+			//Error I encountered in the below line: My entire script was not running because the below line ended with the + answer +. To fix it I had to end it with a single quote.
+			alert('My birth month is July, and your answer was ' + answer4 + '');
+		</script>
+	</body>
+</html>
