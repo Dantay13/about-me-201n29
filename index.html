@@ -5,13 +5,19 @@
 	</head>
 	<body>
 		<header>
-			<style></style>
+			<style>
+				body {background-color: coral;}
+				h1 {color: blue; text-align: center; border: 2px; color: blue; border-style: solid;}
+				p {text-align: center;}
+				footer {text-align: center;}
+			</style>
 		</header>
-		<main>
+		<main>        
 			<h1>Class1Lab</h1>
-			<p>Was I born in Colombia or the cayman Islands?</p>
-			<P>Which sport do you think is my favorite, soccer or basketball?</P>
-			<P>Do you think pizza is my favorite food?</P>
+			<p style="color: chartreuse;">The answer to my place of birth is Colombia</p>
+			<P style="color:crimson">Soccer is my favorite sport</P>
+			<P style="color: darkmagenta;">Do you remember what is my favorite food? My favorite food is Pasta!</P>
+			<p style="color: crimson;">My birthday month is July!</p>
 		</main>
 		<footer>
 			(c) 2022 Danner Taylor
@@ -38,13 +44,13 @@
 			let answer3 = prompt('Which do you think is my favorite food? Pizza or Pasta?');
 			console.log(answer3);
 
-			alert('Tha is interesting that you selected ' + answer3 + ' as my favorite food, because pasta is my favorite food!');
+			alert('That is interesting that you selected ' + answer3 + ' as my favorite food, because pasta is my favorite food!');
 
 			let answer4 = prompt('My birth month starts with the letter "J" what month is it?');
 			console.log(answer4);
 
 			//Error I encountered in the below line: My entire script was not running because the below line ended with the + answer +. To fix it I had to end it with a single quote.
-			alert('My birth month is July, and your answer was ' + answer4 + '');
+			alert('My birth month is July, and your answer was ' + answer4 + ' you also said that I was born in ' + answer1 + ' that my favorite sport is ' + answer2 + ' and that my favorite food is ' + answer3 + '');
 		</script>
 	</body>
 </html>
