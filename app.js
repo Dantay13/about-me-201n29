@@ -8,28 +8,37 @@ let answer1 = prompt('Was I born in Colombia? (y/n or yes/no)');
 console.log(answer1);
 
 // // String concatenation
-alert('You answered ' + answer1 + ' as my place of birth');
-    if answer1 === ('yes');
-        alert('That answer is correct')
+// alert('You answered ' + answer1 + ' as my place of birth');
+if (answer1 === 'yes' || 'y');
+    alert('That answer is correct');
 
-// let answer2 = prompt('Which sport do you think is my favorite, soccer or basketball?';
+let answer2 = prompt('Is soccer my favorite sport? (y/n or yes/no)');
 
-// console.log(answer2);
+console.log(answer2);
 
-// alert('You think ' + answer2 + ' is my favorite sport');
+if (answer2 === 'yes' || 'y');
+    alert('That is corrct! Soccer is my favorite sport');
 
-// if (answer2 === 'soccer') {
-// 	alert('That is correct');
-// };
 
-// let answer3 = prompt('Which do you think is my favorite food? Pizza or Pasta?');
-// console.log(answer3);
 
-// alert('That is interesting that you selected ' + answer3 + ' as my favorite food, because pasta is my favorite food!');
+let answer3 = prompt('Do you like pasta? (y/n or yes/no)');
+console.log(answer3);
 
-// let answer4 = prompt('My birth month starts with the letter "J" what month is it?');
-// console.log(answer4);
+if (answer3 === 'yes'||'y');
+    alert('I like pasta too');
 
-// //Error I encountered in the below line: My entire script was not running because the below line ended with the + answer +. To fix it I had to end it with a single quote.
-// alert('My birth month is July, and your answer was ' + answer4 + ' you also said that I was born in ' + answer1 + ' that my favorite sport is ' + answer2 + ' and that my favorite food is ' + answer3 + '');
+let answer4 = prompt('Are you a fan of the MCU (Marvel Cinematic Universe)? (y/n or yes/no'));
+console.log(answer4);
+
+if (answer4 === 'yes' || 'y');
+    alert('I am a fan also!');
+
+if (answer4 === 'yes' || 'y');
+    prompt('Who is your favorite super hero in the MCU?');
+
+let answer5 = prompt('Can you 10 push-ups without stopping? (y/n or yes/no'));
+console.log(answer5);
+
+if (answer5 === 'no' || 'n');
+    alert('Neither can I!');
 
