@@ -22,13 +22,14 @@ yesNoAnswer(answer3);
 
 let answer4 = prompt('Are you a fan of the MCU (Marvel Cinematic Universe)? (y/n or yes/no').toLowerCase();
 console.log(answer4);
-yesNoAnswer(answer4);
+marvelAnswer(answer4);
+
+
 
 let answer5 = prompt('Can you 10 push-ups without stopping? (y/n or yes/no').toLowerCase();
 console.log(answer5);
 yesNoAnswer(answer5);
 
-marvel();
 
 // This function checks if answer 1 input is yes or no and outputs an alert for either answer
 function yesNoAnswer(answer) {
@@ -45,6 +46,23 @@ function yesNoAnswer(answer) {
   }
 }
 
+
+//This is my marvel yer or no function
+function marvelAnswer(answer) {
+  if (answer === 'yes' || answer === 'y') {
+    alert('That answer is correct');
+    count = count + 1;
+    console.log('Count: ',count);
+    marvel();
+  }
+  else if (answer === 'no' || answer === 'n') {
+    alert('That is incorrect');
+    marvel();
+  }
+  else {
+    alert('Please answer with y/n or yes/no');
+  }
+}
 
 
 // This function is for question 2
@@ -72,10 +90,11 @@ function marvel(){
  //this is how many guesses we have
   let guesses = 6;
   
-  while(!valid || guesses > 0){
-    let supe = prompt('I\'m a fan also, who\'s your favorite superhero?').toLowerCase();
-    console.log('Supe', supe);
+  
+  while(!valid && guesses > 0){
     //This for loop, checks to see if the answer is valid
+    let supe = prompt('I\'m a fan! Can you guess who\'s my favorite superhero?').toLowerCase();
+    console.log('Supe', supe);
     for(let i = 0; i < heroList.length; i++){
     // we want to look through the list, to see if their answer, matches the array herolist
       if(supe === heroList[i]){
@@ -98,8 +117,8 @@ function marvel(){
     else if (valid) {
       count++;
       alert(`You guessed it correctly! It only took you ${guesses} guesses. My list of favorite Super Heroes are ${heroList}`);
+      break;
     }
-
   }
 }
 
