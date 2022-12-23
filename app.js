@@ -6,26 +6,28 @@
 
 let count = 0;
 
-//Question 1 
+//Question 1
 let answer1 = prompt('Was I born in Colombia? (y/n or yes/no)').toLowerCase();
 console.log('Answer 1: ', answer1);
 //Answer 1 is fed into the yesNoAnswer function to be evaluated
 yesNoAnswer(answer1);
 
+//Question 2
 let answer2 = prompt('Is soccer my favorite sport? (y/n or yes/no)').toLowerCase();
 console.log('Answer 2: ',answer2);
 soccerAnswer(answer2);
 
+//Question 3
 let answer3 = prompt('Do you like pasta? (y/n or yes/no)').toLowerCase();
 console.log('Answer 3: ',answer3);
 yesNoAnswer(answer3);
 
+//Question 4
 let answer4 = prompt('Are you a fan of the MCU (Marvel Cinematic Universe)? (y/n or yes/no').toLowerCase();
 console.log(answer4);
 marvelAnswer(answer4);
 
-
-
+// Question 5
 let answer5 = prompt('Can you 10 push-ups without stopping? (y/n or yes/no').toLowerCase();
 console.log(answer5);
 yesNoAnswer(answer5);
@@ -33,7 +35,7 @@ yesNoAnswer(answer5);
 
 // This function checks if answer 1 input is yes or no and outputs an alert for either answer
 function yesNoAnswer(answer) {
-  if (answer === 'yes' || answer === 'y') {
+  if (answer1 === 'yes' || answer === 'y') {
     alert('That answer is correct');
     count = count + 1;
     console.log('Count: ',count);
